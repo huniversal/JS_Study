@@ -40,3 +40,39 @@
 22 55
 */
 
+/*
+제목: 알람 시계
+설명: 시간 계산 문제
+제출: https://www.acmicpc.net/submit/2884
+*/
+
+function main() {
+  const data = getData();
+  let h = data.a;
+  let m = data.b;
+
+  // 전체 분으로 환산
+  let totalMin = h * 60 + m - 45;
+
+  // 음수면 하루 더하기
+  if (totalMin < 0) totalMin += 60 * 24;
+
+  // 시:분으로 변환
+  h = Math.floor(totalMin / 60);
+  m = totalMin % 60;
+
+  console.log(h + " " + m);
+}
+
+main();
+
+function getData() {
+  const fs = require("fs");
+  const fileData = fs.readFileSync(0).toString().trim().split(" ");
+
+  const result = new Object();
+  result.a = isNaN(fileData[0]) ? fileData[0] : parseInt(fileData[0]);
+  result.b = isNaN(fileData[1]) ? fileData[1] : parseInt(fileData[1]);
+
+  return result;
+}

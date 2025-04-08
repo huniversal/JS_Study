@@ -12,9 +12,11 @@ console.log(false || false);
 
 var id = "ahdgawkdgajd";
 var invaildId = id.length < 4 || id.length > 12;
+var invaildId = !(id.length >= 4 || id.length <= 12);
 console.log("id 입력 조건에 맞지 않음", invaildId);
 
 // 앞의 값이 참이면 앞의 값을 반환
+// 앖의 값이 거짓이면 뒤의 값을 반환
 // falsy : number 0, string '', boolean false, null, undefined, NaN
 // truthy : 100, 'hello', true
 
@@ -26,7 +28,7 @@ console.log(0 || 100); //100
 console.log("" || "guest"); // guest
 
 // let userName = '체리핑'
-let userId = "";
+let userId = "undifined"; // undefined
 let userAge = 8;
 console.log(userId || "널핑");
 

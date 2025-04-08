@@ -13,7 +13,7 @@ var s2 = "double quote";
 var b1 = true;
 var b2 = false;
 
-//undefined
+// type: undefined, value: undefined
 var emptyVar;
 
 //null

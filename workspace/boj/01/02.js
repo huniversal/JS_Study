@@ -19,9 +19,21 @@
 3
 */
 
-var fs = require("fs");
-var filedata = fs.readFileSync(0).toString().split(" ");
-console.log(filedata);
-var a = parseInt(filedata[0]);
-var b = parseInt(filedata[1]);
-console.log(a + b);
+function main() {
+  const data = getData();
+
+  console.log(data.a + data.b);
+}
+main();
+
+function getData() {
+  const fs = require("fs");
+  const fileData = fs.readFileSync(0).toString().trim().split(" ");
+
+  const result = new Object();
+
+  result.a = parseInt(fileData[0]);
+  result.b = parseInt(fileData[1]);
+
+  return result;
+}
