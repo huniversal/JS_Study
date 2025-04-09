@@ -248,6 +248,44 @@
   - 💻 A+B - 5: [boj/03/11.js](./workspace-ins/boj/03/11.js)
   - 💻 A+B - 4: [boj/03/12.js](./workspace-ins/boj/03/12.js)
 
+### 7일차(월)
+##### 오전(3시간)
+* 1일차에서 5일차까지 실습 정리
+  - ex01-01.html ~ ex01-11.js
+
+##### 오후(3시간)
+* 1일차에서 5일차까지 실습 정리
+  - ex01-13.js ~ ex01-22.js
+
+##### boj
+* 문제 풀이
+  - 💻 A-B - [boj/01/03.js](./workspace-ins/boj/01/03.js)
+  - 💻 A×B - [boj/01/04.js](./workspace-ins/boj/01/04.js)
+  - 💻 A/B - [boj/01/05.js](./workspace-ins/boj/01/05.js)
+  - 💻 사칙연산 - [boj/01/06.js](./workspace-ins/boj/01/06.js)
+  - 💻 ??! - [boj/01/07.js](./workspace-ins/boj/01/07.js)
+  - 💻 1998년생인 내가 태국에서는 2541년생?! - [boj/01/08.js](./workspace-ins/boj/01/08.js)
+  - 💻 나머지 - [boj/01/09.js](./workspace-ins/boj/01/09.js)
+
+
+### 8일차(화)
+##### 오전(3시간)
+* boj 문제 풀이
+  - 💻 곱셈 - [boj/01/10.js](./workspace-ins/boj/01/10.js)
+  - 💻 꼬마 정민 - [boj/01/11.js](./workspace-ins/boj/01/11.js)
+  - 💻 고양이 - [boj/01/12.js](./workspace-ins/boj/01/12.js)
+  - 💻 개 - [boj/01/13.js](./workspace-ins/boj/01/13.js)
+  - 💻 두 수 비교하기 - [boj/02/01.js](./workspace-ins/boj/02/01.js)
+  - 💻 시험 성적 - [boj/02/02.js](./workspace-ins/boj/02/02.js)
+  - 💻 윤년 - [boj/02/03.js](./workspace-ins/boj/02/03.js)
+  - 💻 사분면 고르기 - [boj/02/04.js](./workspace-ins/boj/02/04.js)
+
+##### 오후(3시간)
+* boj 문제 풀이
+  - 💻 알람 시계 - [boj/02/05.js](./workspace-ins/boj/02/05.js)
+* 📜 참조 타입(Object, 객체)
+  - 💻 ex01-23.js
+  - 💻 ex01-24.js
 
 # 참고 사이트
 ## 자바스크립트 학습
