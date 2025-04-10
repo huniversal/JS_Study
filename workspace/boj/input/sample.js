@@ -19,11 +19,19 @@ function getData() {
   const arr = fileData.trim().split("\n");
 
   const result = []; // 리턴할 2차원 배열
-  for (let i = 0; i < arr.length; i++) {
-    const row = arr[i]; // '23 48', '25'
+  // for (let i = 0; i < arr.length; i++) {
+  //   const row = arr[i]; // '23 48', '25'
+  //   const rowArr = row.split(" "); // ['23', '48'], ['25']
+  //   for (let k = 0; k < rowArr.length; k++) {
+  //     rowArr[k] = isNaN(rowArr[k]) ? rowArr[k] : parseInt(rowArr[k]);
+  //   }
+  //   result.push(rowArr);
+  // }
+
+  for (let row of arr) {
     const rowArr = row.split(" "); // ['23', '48'], ['25']
-    for (let k = 0; k < rowArr.length; k++) {
-      rowArr[k] = isNaN(rowArr[k]) ? rowArr[k] : parseInt(rowArr[k]);
+    for (let element of rowArr) {
+      element = isNaN(element) ? element : parseInt(element);
     }
     result.push(rowArr);
   }
