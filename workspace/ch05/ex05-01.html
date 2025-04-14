@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,13 +16,51 @@
 
     <script>
       // id가 "purchases"인 요소노드를 찾음
-      const purchases = document.getElementById("purchases");
+      // const shoppingList = document.getElementById("purchases"); // ul
 
       // 제일 먼저 구매해야 할 항목은 무엇인가?
-      const liList = document.getElementsByTagName("li");
-      console.log(liList);
-      const firstLi = liList[0];
+      // const liList = shoppingList.getElementsByTagName('li'); // [li, li, li]
+
+      const shoppingList = document.getElementsByClassName("list")[0];
+
+      // console.log(liList);
+      // const firstLi = liList[0]; // <li>두부</li>
+      const firstLi = shoppingList.firstElementChild; // <li>두부</li>
       console.log(firstLi);
+      const firstTextNode = firstLi.firstChild; // 두부 object
+      console.log(firstTextNode);
+      console.log("제일 먼저 구매할 항목", firstTextNode.nodeValue); // 두부 string
+
+      // 첫번째 구매할 항목을 양파로 수정
+      firstTextNode.nodeValue = "양파";
+
+      // 마지막으로 사야할 품목 출력
+      console.log(
+        "마지막으로 사야할 품목",
+        shoppingList.lastElementChild.firstChild.nodeValue
+      );
+
+      const ramen = shoppingList.lastElementChild;
+      console.log(ramen.textContent); // "라면"
+
+      console.log("==========================");
+      const liNodes = shoppingList.childNodes;
+
+      for (let i = 0; i < liNodes.length; i++) {
+        const node = liNodes[i];
+
+        // 요소 노드인지 확인
+        if (node.nodeType === 1) {
+          const text = node.firstChild.nodeValue.trim();
+
+          if (text === "라면") {
+            console.log("라면은 마싯엉:", text);
+            break;
+          }
+        }
+      }
+
+      console.log("==========================");
     </script>
   </body>
 </html>
