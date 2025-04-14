@@ -20,6 +20,10 @@
 
       // 제일 먼저 구매해야 할 항목은 무엇인가?
       // const liList = shoppingList.getElementsByTagName('li'); // [li, li, li]
+      console.log(
+        "마지막으로 사야할 품목(querySelector): ",
+        document.querySelector(".list > li:last-child").firstChild.nodeValue
+      );
 
       const shoppingList = document.getElementsByClassName("list")[0];
 
