@@ -10,13 +10,18 @@
       <h1>Counter</h1>
     </header>
     <div id="container">
-      <button>+</button>
       <span>0</span>
+      <button>+</button>
     </div>
     <script>
-      // id가 'Container'인 요소를 찾기
-      const Container = document.getElementById("container");
-      console.log(container);
+      // container 하위의 btn 요소 찾기
+      const btn = document.querySelector("#container > button");
+      const cnt = document.querySelector("#container > span");
+
+      btn.addEventListener("click", () => {
+        const count = parseInt(cnt.firstChild.nodeValue);
+        cnt.firstChild.nodeValue = count + 100;
+      });
     </script>
   </body>
 </html>
