@@ -15,6 +15,13 @@
       .line-through {
         text-decoration: line-through; /* 취소선 스타일 */
       }
+      ul {
+        margin: 10px;
+        border: 1px solid blue;
+      }
+      li {
+        border: 1px solid red;
+      }
     </style>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -37,17 +44,26 @@
           console.log(computedStyle.fontSize);
         });
 
-        for (let item of list.children) {
-          item.addEventListener("click", function (e) {
-            console.log("e.target", e.target); // 지정한 class를 가지고 있는지 여부 반환
-            // if (event.target.classList.contains("line-through")) {
-            //   event.target.classList.remove("line-through");
-            // } else {
-            //   event.target.classList.add("line-through");
-            // }
-            event.target.classList.toggle("line-through"); // 있으면 제거하고 없으면 추가
-          });
-        }
+        // for (let item of list.children) {
+        //   item.addEventListener("click", function (e) {
+        //     console.log("e.target", e.target); // 지정한 class를 가지고 있는지 여부 반환
+        //     // if (event.target.classList.contains("line-through")) {
+        //     //   event.target.classList.remove("line-through");
+        //     // } else {
+        //     //   event.target.classList.add("line-through");
+        //     // }
+        //     event.target.classList.toggle("line-through"); // 있으면 제거하고 없으면 추가
+        //   });
+        // }
+
+        // 이벤트 위임
+        list.addEventListener("click", function (e) {
+          console.log(e.target);
+          console.log(e.currentTarget);
+          if (e.target.nodeName === "LI") {
+            event.target.classList.toggle("line-through");
+          }
+        });
       });
     </script>
   </head>
