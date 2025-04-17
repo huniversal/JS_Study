@@ -16,20 +16,26 @@
       // 이벤트 등록 방법 1 : elem.on<event> 속성에 이벤트 핸들러 추가
       // Dom Level 0 방식
       btn.onclick = function () {
-        console.log("눌렀음ㅋㅋ");
+        console.log("눌렀음ㅋㅋ - 1");
       };
       btn.onclick = function () {
-        console.log("눌렀냐?");
+        console.log("눌렀냐? - 2");
       };
 
       // 이벤트 등록 방법 3 : addEventListener()
       // Dom Level 2 방식
       btn.addEventListener("click", function () {
-        console.log("하위");
+        console.log("하위 - 3");
       });
-      btn.addEventListener("click", function () {
-        console.log("ㅋㅋ");
-      });
+      // btn.addEventListener("click", handleClick);
+
+      // setTimeout(function () {
+      //   btn.removeEventListener("click", handleClick);
+      // }, 1000 * 20);
+
+      function handleClick() {
+        console.log("눌렀는데 뭐가 바뀐거지? - 4");
+      }
     </script>
   </body>
 </html>

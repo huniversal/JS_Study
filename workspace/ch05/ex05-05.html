@@ -122,12 +122,15 @@
       const titleEl = targetLi.querySelector("span:last-of-type"); // 마지막 span 찾아오기
       if (done) {
         // done이 true라면 완료 -> 미완료로 수정
+        titleEl.appendChild(titleEl.firstChild.firstChild);
+        titleEl.firstChild.remove();
       } else {
         // done이 false라면 미완료 -> 완료로 수정
         const sElem = document.createElement("s"); // <s>
         sElem.appendChild(titleEl.firstChild);
         titleEl.appendChild(sElem);
       }
+      targetLi.dataset.done = !done; // 완료 여부 토글
     }
 
     // 🚀 항목 삭제 함수
