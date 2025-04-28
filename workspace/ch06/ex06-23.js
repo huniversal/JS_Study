@@ -1,9 +1,3 @@
-<<<<<<< HEAD:workspace/ch06/ex06-23.js
-"use strict";
-// 타입 단언
-(() => {
-})();
-=======
 // 타입 단언이 필요한 JS 코드
 
 (()=>{
@@ -27,4 +21,3 @@
   console.log(todo1, todo2, todo3, todo4.content.toUpperCase());
   
 })();
->>>>>>> ef21d8938cd62161c322467411e9c0d87681bd30:sample/06/workspace/ch06/ex06-23.js

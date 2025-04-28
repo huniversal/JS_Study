@@ -1,8 +1,3 @@
-<<<<<<< HEAD:workspace/ch06/ex06-18-02.js
-"use strict";
-// echo 함수 - 제네릭 함수
-(() => {
-=======
 // 드롭다운 리스트 생성 - 자바스크립트
 
 (()=>{
@@ -44,5 +39,4 @@
   </select>
   */
   console.log(createDropdownList(zipcodeList));
->>>>>>> ef21d8938cd62161c322467411e9c0d87681bd30:sample/06/workspace/ch06/ex06-18-02.js
 })();

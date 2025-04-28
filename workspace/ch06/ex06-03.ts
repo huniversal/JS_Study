@@ -1,11 +1,13 @@
-// // 함수에 타입 지정
+// 함수에 타입 지정
 
-// (()=>{
-//   function getCount(count) {
-//     return 'Count: ' + count;
-//   }
+(() => {
+  function getCount(count: number): string {
+    // return count; // 타입 에러
+    return "Count: " + count;
+  }
 
-//   let result = getCount(20);
+  // ㅣet resultL = getCount(20); // 타입 에러
+  let result = getCount(20);
 
-//   console.log(result);
-// })();
+  console.log(result);
+})();
