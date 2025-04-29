@@ -5,5 +5,5 @@
         console.log(name, age);
     }
     user("하루", 5);
-    user("나무");
+    // user("나무");
 })();
