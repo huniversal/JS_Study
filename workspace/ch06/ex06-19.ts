@@ -1,5 +1,14 @@
 // 변수의 타입 추론
 
-(()=>{
-  
+(() => {
+  // 기본 데이터 타입의 변수 타입을 추론에 의지(권장)
+  let name = "이훈진"; // string으로 타입 추론
+
+  const age = 20; // number로 타입 추론
+
+  let name2; // any로 타입 추론
+  name2 = "이훈진";
+  name2 = 219;
+
+  console.log(name, age, name2);
 })();
