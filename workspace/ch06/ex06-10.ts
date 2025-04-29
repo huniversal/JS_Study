@@ -26,8 +26,8 @@
   console.log(u3.age, u3.name);
 
   // 함수의 매개변수의 타입으로 인터페이스 지정
-  function getAge(user: User): number {
-    return user.age;
+  function getAge(user: User): string | number {
+    return user.name;
   }
   console.log(getAge(u1));
   console.log(getAge(u2));

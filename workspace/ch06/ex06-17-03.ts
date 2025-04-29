@@ -10,8 +10,8 @@
     return msg;
   }
 
-  console.log(echo<string>("hello"));
-  console.log(echo<number>(100));
+  // console.log(echo<string>("hello"));
+  // console.log(echo<number>(100));
   console.log(echo2<string>("world"));
   console.log(echo2<number[]>([200, 400]));
 })();

@@ -9,8 +9,8 @@
         console.log("msg.length : ", msg.length);
         return msg;
     }
-    console.log(echo("hello"));
-    console.log(echo(100));
+    // console.log(echo<string>("hello"));
+    // console.log(echo<number>(100));
     console.log(echo2("world"));
     console.log(echo2([200, 400]));
 })();

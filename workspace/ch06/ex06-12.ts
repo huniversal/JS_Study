@@ -22,6 +22,10 @@
     content: "내용2",
     done: false,
   };
+
+  // todo1.id = 999; // ❌ 컴파일 에러
+  todo2.title = "값 변경";
+
   console.log(todo1);
   console.log(todo2);
 })();

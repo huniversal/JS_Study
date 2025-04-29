@@ -1,20 +1,6 @@
 // 인터페이스 사용 - 클래스의 타입 지정
 
 (() => {
-  // 자바스크립트 클래스 선언
-  // class HighSchool {
-  //   constructor(kor, eng) {
-  //     this.kor = kor;
-  //     this.eng = eng;
-  //   }
-  //   sum() {
-  //     return this.kor + this.eng;
-  //   }
-  //   avg() {
-  //     return this.sum() / 2;
-  //   }
-  // }
-
   // FIXME HighSchool 클래스가 구현해야 하는 Score 인터페이스 선언
   interface Score {
     kor: number;
@@ -23,7 +9,7 @@
     avg(): number;
   }
   // FIXME 타입 스크립트 클래스 선언(인터페이스 지정)
-  class HighSchool {
+  class HighSchool implements Score {
     kor: number;
     eng: number;
     constructor(kor: number, eng: number) {

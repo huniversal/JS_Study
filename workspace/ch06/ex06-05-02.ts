@@ -2,8 +2,11 @@
 
 (() => {
   // FIXME: print 함수의 타입을 정의하고 msg의 타입에 따라서 결과값 출력
+  // 타입 별칭
+  type Msg = string | number | boolean;
   // 유니온 타입
-  function print(msg: string | number | boolean): void {
+  // function print(msg: string | number | boolean): void {
+  function print(msg: Msg): void {
     if (typeof msg === "string") {
       // 타입 가드
       console.log(`${msg} 글자수: ${msg.length}`);
