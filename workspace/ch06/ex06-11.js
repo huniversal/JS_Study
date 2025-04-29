@@ -1,6 +1,6 @@
 "use strict";
 // 인터페이스 사용 - 클래스의 타입 지정
-() => {
+(() => {
     // 자바스크립트 클래스 선언
     // class HighSchool {
     //   constructor(kor, eng) {
@@ -34,4 +34,6 @@
     function printScore(score) {
         console.log(score.sum(), score.avg());
     }
-};
+    const haru = new HighSchool(100, 90);
+    printScore(haru);
+})();
