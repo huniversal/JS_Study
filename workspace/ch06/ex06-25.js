@@ -15,10 +15,13 @@
     console.log(typeof new RegExp(""));
     console.log(typeof new Array());
     console.log(typeof []);
+    console.log("=================");
     // msg의 타입에 따라서 다른 코드를 실행하는 함수
     function print(msg) {
         // FIXME string 타입이거나 배열일 경우 msg의 길이를 출력하세요.
         if (typeof msg === "string" || msg instanceof Array) {
+            // typeof A === "string" : 변수 A가 string 타입이 맞는지 check
+            // instanceof : 이 객체가 특정 생성자로부터 만들어졌는지 확인하는 연산자
             console.log(msg.length);
         }
         // FIXME number 타입일 경우 소수점 2자리까지 출력하세요.

@@ -5,6 +5,7 @@
   // 좁은 범위의 타입과 넓은 범위의 타입이 같이 있을 경우 서로 호환된다면 좁은 타입을 넓은 범위의 타입에 포함
   // TODO checkNumber() 함수에 마우스를 올려서 리턴 타입 확인
   function checkNumber(x: number, y: number) {
+    // -> 해당 코드 리턴 타입 생략
     if (x === 10) {
       return 10; // 10 리터럴 타입
     } else if (x === 20) {
@@ -23,5 +24,11 @@
   }
 
   const returnValue = checkNumber(10, 20);
+  const returnValue_1 = checkNumber(20, 20);
+  const returnValue_2 = checkNumber(30, 30);
+  const returnValue_3 = checkNumber(40, 20);
   console.log(returnValue);
+  console.log(returnValue_1);
+  console.log(returnValue_2);
+  console.log(returnValue_3);
 })();

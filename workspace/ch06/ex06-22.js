@@ -11,5 +11,7 @@
     console.log(msg1.toFixed(2));
     // FIXME 리턴값이 string이 되도록 타입 단언을 사용해서 에러를 없애세요.
     const msg2 = getMsg("hello");
-    console.log(msg2.toUpperCase());
+    console.log(msg2);
+    console.log(typeof msg2);
+    // console.log(msg2.toUpperCase());
 })();

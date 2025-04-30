@@ -24,6 +24,7 @@
         }
         return `<select>\n${options}</select>`;
     }
+    console.log(createDropdownList(cityList));
     /* 출력 결과
     <select>
     <option selected="">seoul</option>
@@ -31,7 +32,6 @@
     <option selected="selected">gwangju</option>
     </select>
     */
-    console.log(createDropdownList(cityList));
     /*
     <select>
     <option selected="">12345</option>
