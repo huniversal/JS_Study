@@ -112,5 +112,5 @@
   },
   // "include": ["workspace-ins/**/*"],
   // "exclude": ["node_modules", "sample/**/*"]
-  "exclude": ["**/tempCodeRunnerFile.ts"]
+  "exclude": ["**/tempCodeRunnerFile.ts", "ts-refactoring//*"]
 }
