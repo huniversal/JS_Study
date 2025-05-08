@@ -12,14 +12,9 @@ btn?.addEventListener("click", getImages);
 
 async function getImages() {
   try {
-    const response = await fetch(url);
-    console.log(response);
-    if (response.ok) {
-      const data = await response.json();
-      appendImages(data);
-    } else {
-      console.log(response.status, "에러 발생");
-    }
+    const response = await axios.get<Cat[]>(url);
+    const data = response.data;
+    appendImages(data);
   } catch (err) {
     console.error("에러 발생", err);
   }
