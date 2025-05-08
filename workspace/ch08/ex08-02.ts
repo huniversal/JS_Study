@@ -3,8 +3,8 @@
 
 (() => {
   function f1() {
-    //const obj = null as any;
-    const obj = undefined;
+    const obj = null as any;
+    // const obj = undefined;
     //obj.fn(); // TypeError 발생
 
     const fn = new Function("x", "y", "retun x + y"); // return 오타. SyntaxError 발생
